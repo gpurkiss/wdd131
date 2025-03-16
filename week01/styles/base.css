@@ -1,0 +1,88 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+        "top top top"
+        "left main right"
+        "bottom bottom bottom";
+    height: 100vh;  
+    margin: 0;
+}
+
+.top {
+    grid-area: top;
+    text-align: center;
+    background-color: rgb(172, 124, 124);
+}
+
+h1 {
+    padding: 1em;
+    background-color: rosybrown;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav a:hover{
+    text-decoration-color: rgb(0, 0, 0);
+    text-align: center;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+}
+
+nav a {
+    text-decoration-color: rgb(56, 38, 14);
+    text-align: center;
+    justify-content: space-around;
+    color: rgb(56, 38, 14);
+}
+
+main {
+    grid-area: main;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.card h2 {
+    display: grid;
+    grid-column: 1 / -1;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+}
+
+.card img {
+    width: 40%;
+    margin: 1em;
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.right {
+    grid-area: right;
+    background-color: rgb(228, 205, 172);
+    text-align: center;
+}  
+
+.bottom {
+    grid-area: bottom;
+    background-color: rosybrown;
+    text-align: center;
+}
+
+.bottom p {
+    font-size: 1.5em;
+    padding: 1em;
+}
