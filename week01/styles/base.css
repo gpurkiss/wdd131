@@ -37,10 +37,10 @@ nav a:hover{
 }
 
 nav a {
-    text-decoration-color: rgb(56, 38, 14);
+    text-decoration-color: rgb(227, 200, 165);
     text-align: center;
     justify-content: space-around;
-    color: rgb(56, 38, 14);
+    color: rgb(227, 200, 165);
 }
 
 main {
