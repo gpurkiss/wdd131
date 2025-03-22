@@ -1,10 +1,15 @@
+:root {
+    --primary-color: rgba(57, 21, 124, 0.483);
+    --background: #8bdeff;
+}
+
 body {
     font-family: "Josefin Sans", sans-serif;
    
 }
 
 header {
-    background-color: rgb(57, 21, 124, 0.483);
+    background-color: var(--primary-color);
     padding: .5em;
     text-align: center;
     color: azure;
@@ -31,7 +36,7 @@ main img {
     position: relative;
     align-self: center;
     color: azure;
-    background-color: rgba(57, 21, 124, 0.483);
+    background-color: var(--primary-color);
     max-width: 300px;
     padding: 1em;
     left: 10%;
@@ -43,7 +48,7 @@ main img {
     position: relative;
     align-self: center;
     color: azure;
-    background-color: rgba(57, 21, 124, 0.483);
+    background-color: var(--primary-color);
     max-width: 300px;
     padding: 1em;
     left: 70%;
@@ -52,7 +57,7 @@ main img {
 footer {
     margin-top: auto;
     position: relative;
-    background-color: rgb(57, 21, 124, 0.483);
+    background-color: var(--primary-color);
     color: azure;
     text-align: center;;
     box-shadow: 0 0 30px #8bdeff;
@@ -60,7 +65,7 @@ footer {
 
 @media (min-width: 600px) {
     header {
-        background-color: rgba(57, 21, 124, 0.849);
+        background-color: var(--primary-color);
     }
 
     main {
@@ -79,7 +84,7 @@ footer {
     footer {
         position: relative;
         margin-top: auto;
-        background-color: rgba(57, 21, 124, 0.849);
+        background-color: var(--primary-color);
     }
 
     .icon {
@@ -109,7 +114,8 @@ footer {
         
     }
 
-    .icon {
+    .icon::after {
+        content: url(images/1530389_weather_clouds_storm_sunny_icon.svg);
         width: 2em;
         height: 2em;
     }
