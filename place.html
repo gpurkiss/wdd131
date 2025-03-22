@@ -6,38 +6,45 @@
     <title>Place</title>
     <meta name="description" content="Week 04 of the Web Development course">
     <meta name="author" content="Grace Purkiss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Place Title</h1>
+        <h1>Iceland</h1>
     </header>
     <main>
-        <div>
+        <div class="hero">
             <picture>
-                <source srcset="images/iceland-large.jpg" media="(max-width: 1000px)">
-                <source srcset="images/iceland-medium.png" media="(max-width: 550px)">
-                <img src="images/northern-lights.jpeg" alt="Place Image" width="400" height="200">
+                <source srcset="images/pexels-pixabay-356831.webp" media="(min-width: 1000px)">
+                <img src="images/northern-lights.webp" alt="Place Image" width="1500" height="700">
             </picture>
         </div>
-        <section>
+        <section class="data">
             <h2>Data</h2>
-            <p>area</p>
-            <p>population</p>
-            <p>capital</p>
-            <p>language</p>
-            <p>currency</p>
-            <p>timezone</p>
-            <p>calling code</p>
+            <p>Area: 39,768 square miles</p>
+            <p>Population: 393,349 as of 2023</p>
+            <p>Capital: Reykjavik</p>
+            <p>Language: Icelandic</p>
+            <p>Currency: Icelandic Krona</p>
+            <p>Timezone: Greenwich Mean Time (GMT)</p>
+            <p>Calling Code: +354</p>
         </section>
-        <section>
-            <h2>Weather</h2>
-            <p>temperature</p>
-            <p>humidity</p>
-            <p>wind speed</p>
+        <section class="weather">
+            <h2>Weather
+            <img class="icon" src="images/1530389_weather_clouds_storm_sunny_icon.png" alt="Weather Icon" width="100" height="100"></h2>
+            <p>Temperature: 34F</p>
+            <p>Humidity: 80%</p>
+            <p>Wind Speed: 5 mph</p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>©2025 🌼Grace Purkiss🌻 Iceland</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer> 
+    
 </body>
 </html>
