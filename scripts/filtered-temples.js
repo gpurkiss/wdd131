@@ -18,7 +18,7 @@ menubutton.addEventListener('click', () => {
   }
 });
  
-console.log("JavaScript is running...");
+//console.log("JavaScript is running...");
 
 const temples = [
     {
@@ -104,11 +104,10 @@ const temples = [
 
   ];
 
+  createTempleCard(temples);
+
   function createTempleCard(temples) {
-    const resGrid = document.querySelector(".res-grid");
-    console.log("Clearing .res-grid container...");
-    resGrid.innerHTML = ""; // Clear the container before adding new cards
-  
+    document.querySelector(".res-grid").innerHTML = "";  
     temples.forEach(temple => {
       console.log("Adding temple:", temple.templeName);
       let card = document.createElement("section");
@@ -132,7 +131,7 @@ const temples = [
       card.appendChild(area);
       card.appendChild(img);
   
-      resGrid.appendChild(card);
+      document.querySelector(".res-grid").appendChild(card)
     });
   }
 
