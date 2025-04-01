@@ -14,7 +14,7 @@ menubutton.addEventListener('click', () => {
   if (menuitems.classList.contains('open')) {
     menubutton.textContent = '❌';
   } else {
-    menubutton.textContent = '☰';
+    menubutton.textContent = '🌹';
   }
 });
  

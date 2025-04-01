@@ -21,8 +21,24 @@ h1 {
     color: rgb(165, 26, 26);
 }
 
+.menu-button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    transition: opacity 1.3s ease;
+}
+
+ 
+.menu-button.hidden {
+    opacity: 0.5;
+}
+ 
+ 
 nav {
     background-color: rgb(255, 233, 147);
+   
 }
 
 nav ul {
@@ -84,3 +100,14 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 30px #f19393;
 }  
+
+@media (max-width: 750px) {
+    .menu-button {
+        display: block;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+     
+}
