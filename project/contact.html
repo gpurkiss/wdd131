@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Grace Purkiss">
+    <meta name="description" content="On this page you will be able to contact the conpany for various different situations and meet the team.">
+    <title> Gardens Grove Landscaping Contact Us Page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="styles/siteplan.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/landscapinglogo.png" alt="logo">
+        <nav>
+            <a href="index.html"> Home </a>
+            <a href="services.html"> Services </a>
+            <a href="contact.html"> Contact Us </a>
+        </nav>
+    </header>
+    <main class="grid contact">
+        <h1>Contact Us</h1>
+        <form action="#" class="contactform">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="emailaddress">Email:</label>
+                <input type="email" name="email" id="emailaddress" required>
+            </fieldset>
+            <fieldset class="radio-inputs">
+                <input type="radio" id="general" name="drone" value="general" checked />
+                <label for="general">General</label>
+
+                <input type="radio" id="reservation" name="drone" value="reservation">
+                <label for="reservation">Pricing Inquery</label>
+
+                <input type="radio" id="Feedback" name="drone" value="Feedback">
+                <label for="Feedback">Feedback</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </fieldset>
+            <div class="signup">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Please subscribe for discounts offered</label>
+            </div>
+            <button type="submit" class="submit">Send your message</button>
+        </form>
+
+        <section class="address"> 
+            <h2> Our Contact Info</h2>
+            <address>
+                <p>Gardens Grove Landscaping</p>
+                <p>Ogden Utah</p>
+                <p>Telephone: 801-555-5555"</p>
+                <p> Email: contactus@email.com</p>
+            </address>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Gardens Grove Landscaping</p>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>
